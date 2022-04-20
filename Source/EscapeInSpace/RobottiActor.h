@@ -14,6 +14,8 @@ class ESCAPEINSPACE_API ARobottiActor : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ARobottiActor();
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FVector VektoriLuku;
 
 protected:
 	// Called when the game starts or when spawned
@@ -22,5 +24,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	UFUNCTION(BlueprintCallable)
+	float Hyokkays(bool value, float etaisyys);
+UFUNCTION(BlueprintNativeEvent, BlueprintCallAble)
+	void Hyokkaa();
 };
