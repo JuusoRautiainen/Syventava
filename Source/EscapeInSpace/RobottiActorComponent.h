@@ -15,8 +15,6 @@ class ESCAPEINSPACE_API URobottiActorComponent : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	URobottiActorComponent();
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		bool OnkoHyokatty;
 
 protected:
 	// Called when the game starts
